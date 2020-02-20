@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: tuto-api-gateway
+zuul:
+  routes:
+    github:
+      path: /github/**
+      url: https://github.com
+    node:
+      path: /node/**
+      url: https://nodejs.org
